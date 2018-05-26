@@ -23,13 +23,13 @@ requirements:
     - automake
   host:
     - pari
-    - ntl 10.3.*
+    - ntl
     - libflint
     - mpfr
     - gmp
   run:
-    - pari
-    - ntl 10.3.*
+    - {{ pin_compatible('pari') }}
+    - ntl
     - libflint
     - mpfr
     - gmp
