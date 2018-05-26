@@ -11,25 +11,28 @@ source:
   sha256: 3d5c3d906200cb4fdc89895ea2cd0842d6c68ccae25dcf1dbe92a5ff9165ffd6
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
+  run_exports:
+    - {{ pin_subpackage('eclib', max_pin='x' }}
 
 requirements:
   build:
-    - toolchain
+    - {{ compiler('cxx') }}
     - libtool
     - automake
+  host:
     - pari
-    - ntl
+    - ntl 10.3.*
     - libflint
-    - mpfr 3.*
-    - gmp >=5.0.1,<7
+    - mpfr
+    - gmp
   run:
     - pari
-    - ntl
+    - ntl 10.3.*
     - libflint
-    - mpfr 3.*
-    - gmp >=5.0.1,<7
+    - mpfr
+    - gmp
 
 test:
   commands:
