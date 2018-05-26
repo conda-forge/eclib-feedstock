@@ -16,14 +16,16 @@ modular symbol code used to create the elliptic curve database.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/eclib-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/eclib-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/eclib-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/eclib-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/eclib-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/eclib-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/eclib-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/eclib-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/eclib/badges/version.svg)](https://anaconda.org/conda-forge/eclib)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/eclib/badges/downloads.svg)](https://anaconda.org/conda-forge/eclib)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-eclib-green.svg)](https://anaconda.org/conda-forge/eclib) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/eclib.svg)](https://anaconda.org/conda-forge/eclib) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/eclib.svg)](https://anaconda.org/conda-forge/eclib) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/eclib.svg)](https://anaconda.org/conda-forge/eclib) |
 
 Installing eclib
 ================
