@@ -27,12 +27,14 @@ requirements:
     - libflint
     - mpfr
     - gmp
+    - gf2x
   run:
     - {{ pin_compatible('pari') }}
     - ntl
     - libflint
     - mpfr
     - gmp
+    - gf2x
 
 test:
   commands:
