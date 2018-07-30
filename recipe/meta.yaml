@@ -1,4 +1,4 @@
-{% set version = "20171219" %}
+{% set version = "20180710" %}
 {% set name = "eclib" %}
 
 package:
@@ -8,10 +8,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/JohnCremona/eclib/archive/v{{ version }}.tar.gz
-  sha256: 3d5c3d906200cb4fdc89895ea2cd0842d6c68ccae25dcf1dbe92a5ff9165ffd6
+  sha256: 176840c9dbed6156f291da3c877ce680f746acf0dcd1b952174f1e046f28b71d
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage('eclib', max_pin='x') }}
@@ -27,12 +27,14 @@ requirements:
     - libflint
     - mpfr
     - gmp
+    - gf2x
   run:
     - {{ pin_compatible('pari') }}
     - ntl
     - libflint
     - mpfr
     - gmp
+    - gf2x
 
 test:
   commands:
