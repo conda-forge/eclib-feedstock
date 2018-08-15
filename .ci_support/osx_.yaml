@@ -2,6 +2,8 @@ MACOSX_DEPLOYMENT_TARGET:
 - '10.9'
 cxx_compiler:
 - toolchain_cxx
+gf2x:
+- '1.2'
 gmp:
 - '6'
 macos_machine:

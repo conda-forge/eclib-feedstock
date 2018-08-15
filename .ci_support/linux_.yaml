@@ -1,5 +1,7 @@
 cxx_compiler:
 - toolchain_cxx
+gf2x:
+- '1.2'
 gmp:
 - '6'
 mpfr:
