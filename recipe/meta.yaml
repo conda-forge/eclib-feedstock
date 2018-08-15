@@ -1,4 +1,4 @@
-{% set version = "20180710" %}
+{% set version = "20180815" %}
 {% set name = "eclib" %}
 
 package:
@@ -8,12 +8,12 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/JohnCremona/eclib/archive/v{{ version }}.tar.gz
-  sha256: 176840c9dbed6156f291da3c877ce680f746acf0dcd1b952174f1e046f28b71d
+  sha256: 2b232cfa5394cb35520280327f33c3cb323a4d4f33eecd5b803fc4ad20c1bdf3
   patches:
     - 0001-Install-missing-include.patch
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage('eclib', max_pin='x') }}
