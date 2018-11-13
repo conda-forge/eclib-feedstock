@@ -1,7 +1,15 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '10.9'
+build_number_decrement:
+- '1000'
+channel_sources:
+- conda-forge,defaults
+channel_targets:
+- conda-forge main
 cxx_compiler:
 - toolchain_cxx
+gf2x:
+- '1.2'
 gmp:
 - '6'
 macos_machine:
@@ -11,9 +19,14 @@ macos_min_version:
 mpfr:
 - '4'
 ntl:
-- 10.3.0
+- 11.3.1
 pin_run_as_build:
   gmp:
     max_pin: x
   mpfr:
     max_pin: x
+zip_keys:
+- - cxx_compiler
+  - channel_sources
+  - channel_targets
+  - build_number_decrement
