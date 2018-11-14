@@ -9,8 +9,6 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/JohnCremona/eclib/archive/v{{ version }}.tar.gz
   sha256: 2b232cfa5394cb35520280327f33c3cb323a4d4f33eecd5b803fc4ad20c1bdf3
-  patches:
-    - 0001-Install-missing-include.patch
 
 build:
   number: 0
