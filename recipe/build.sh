@@ -3,6 +3,11 @@
 export CFLAGS="-g -O3 $CFLAGS"
 export CXXFLAGS="-g -O3 $CXXFLAGS"
 
+# workaround for https://github.com/JohnCremona/eclib/issues/45
+if [ "$(uname)" == "Linux" ]; then
+    sed -i "s/long    rank(GEN x);//g" $PREFIX/include/pari/paridecl.h
+fi
+
 chmod +x autogen.sh
 ./autogen.sh
 
