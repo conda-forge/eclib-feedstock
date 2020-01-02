@@ -21,6 +21,7 @@ requirements:
     - {{ compiler('cxx') }}
     - libtool
     - automake
+    - make
   host:
     - pari
     - ntl
