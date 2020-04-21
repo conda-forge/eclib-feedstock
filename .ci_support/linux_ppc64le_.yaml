@@ -15,7 +15,7 @@ gmp:
 mpfr:
 - '4'
 ntl:
-- 11.3.2
+- 11.4.3
 pari:
 - '2.11'
 pin_run_as_build:
