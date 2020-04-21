@@ -11,7 +11,7 @@ source:
   sha256: 695e45e14aa521a3eab15d6fcc58e2aa014d601acca9b573388b3660d57c1320
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage('eclib', max_pin='x') }}
@@ -46,7 +46,7 @@ test:
 
 about:
   home: https://github.com/JohnCremona/eclib
-  license: GPLv2
+  license: GPL-2.0-or-later
   license_file: COPYING
   summary: |
     The eclib package includes mwrank (for 2-descent on elliptic curves over Q) and
