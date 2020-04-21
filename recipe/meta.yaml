@@ -46,7 +46,7 @@ test:
 
 about:
   home: https://github.com/JohnCremona/eclib
-  license: GPLv2
+  license: GPL-2.0-or-later
   license_file: COPYING
   summary: |
     The eclib package includes mwrank (for 2-descent on elliptic curves over Q) and
