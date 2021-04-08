@@ -1,4 +1,4 @@
-{% set version = "20210310" %}
+{% set version = "20210408" %}
 {% set name = "eclib" %}
 
 package:
@@ -7,8 +7,8 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/JohnCremona/eclib/archive/v{{ version }}.tar.gz
-  sha256: 97f13eb75c5f5c0899411035e22635b3e29a6ab37fb18ebde4856379cd7eec86
+  url: https://github.com/JohnCremona/eclib/archive/{{ version }}.tar.gz
+  sha256: fb2818c864e301ded359667214831d29e8f79509cd9a09a65a14801eaa5d4938
 
 build:
   number: 0
