@@ -19,7 +19,7 @@ mpfr:
 ntl:
 - 11.4.3
 pari:
-- '2.13'
+- 2.13.* *_pthread
 pin_run_as_build:
   gmp:
     max_pin: x
