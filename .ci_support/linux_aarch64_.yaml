@@ -18,6 +18,8 @@ gf2x:
 - '1.3'
 gmp:
 - '6'
+libflint:
+- '2.8'
 mpfr:
 - '4'
 ntl:
