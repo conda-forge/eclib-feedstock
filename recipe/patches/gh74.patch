@@ -1,0 +1,40 @@
+From 5395e81249cae90cceefc70d130b983186ef7960 Mon Sep 17 00:00:00 2001
+From: Isuru Fernando <isuruf@gmail.com>
+Date: Wed, 19 Apr 2023 00:16:50 -0500
+Subject: [PATCH] Fix log(CC) with libc++ >=16
+
+libc++ 16 changed the definition of log(complex<T> x) from
+
+  complex<T>(std::log(std::abs(x)), std::arg(x));
+
+to
+
+  complex<T>(log(abs(x)), arg(x));
+
+which means argument dependent lookup (ADL) does not work anymore.
+Defining CC = std::complex<RR> is undefined behaviour anyway
+according to the C++ standard. So, the change in libc++ is
+technically not a backwards incompatible change.
+---
+ libsrc/eclib/interface.h | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/libsrc/eclib/interface.h b/libsrc/eclib/interface.h
+index ba5a5aa..f5cbf49 100644
+--- a/libsrc/eclib/interface.h
++++ b/libsrc/eclib/interface.h
+@@ -203,6 +203,11 @@ template <> inline CC std::exp(const CC &z)
+   RR e = exp(z.real());
+   return CC(e * cos(im), e * sin(im));
+ }
++template <> inline CC std::log(const CC &z)
++{
++  RR arg = atan2(z.imag(), z.real());
++  return CC(log(std::abs(z)), arg);
++}
+ inline CC operator/(const CC &a, const CC &b)
+ {
+   RR are = a.real();
+-- 
+2.37.3
+
