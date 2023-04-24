@@ -1,11 +1,11 @@
-About eclib
-===========
+About eclib-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eclib-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/JohnCremona/eclib
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eclib-feedstock/blob/main/LICENSE.txt)
 
 Summary: The eclib package includes mwrank (for 2-descent on elliptic curves over Q) and
 modular symbol code used to create the elliptic curve database.
