@@ -1,0 +1,11 @@
+--- libsrc/eclib/flinterface.h	2025-03-26 22:46:19.174852490 -0500
++++ libsrc/eclib/flinterface.h	2025-03-26 22:46:30.563318509 -0500
+@@ -37,6 +37,7 @@
+ 
+ //#define TRACE_FLINT_RREF
+ 
++#include <gmp.h>
+ #include <flint/flint.h> // must include this first to set __FLINT_VERSION
+ 
+ #if (__FLINT_VERSION>2)
+
