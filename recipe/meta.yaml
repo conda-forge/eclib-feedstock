@@ -10,7 +10,7 @@ source:
   sha256: 949922fa3d7c5388eac186c8906f858e31b621f081d5aad333e74aaaa758b1de
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage('eclib', max_pin='x') }}
