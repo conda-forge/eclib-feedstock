@@ -1,4 +1,4 @@
-{% set version = "20250627" %}
+{% set version = "20260422" %}
 {% set name = "eclib" %}
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/JohnCremona/eclib/archive/{{ version }}.tar.gz
-  sha256: c45cc20366effd5fce8ec3245ecf33f99e0d08222e21644a8db57e1356d85b4f
+  sha256: 4feb734bb18d88194b3c4e26aa7cd9b60d674080c935d471b0fafbc4e66493a8
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage('eclib', max_pin='x') }}
