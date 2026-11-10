@@ -8,6 +8,9 @@ package:
 source:
   url: https://github.com/JohnCremona/eclib/archive/{{ version }}.tar.gz
   sha256: e6efd337985ab372da24d9af40238c1e1268b02d0ba40b597d07a7577fdf5dc1
+  patches:
+    - 0c8180b376f3711ed87bef1b816b978ae4730923.patch
+    - a2309cf87df9cd4ffa15574b858624a4414331b5.patch
 
 build:
   number: 0
