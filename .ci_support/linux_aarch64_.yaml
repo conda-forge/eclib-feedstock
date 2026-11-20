@@ -21,7 +21,7 @@ gf2x:
 gmp:
 - '6'
 libflint:
-- '3.5'
+- '3.6'
 mpfr:
 - '4'
 ntl:
